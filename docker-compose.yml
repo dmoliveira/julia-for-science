@@ -1,0 +1,9 @@
+version: '3'
+services:
+    julia-for-science:
+        container_name: julia-for-science
+        build:
+            context: .
+            dockerfile: julia.Dockerfile
+        image: julia-for-science:0.5.1
+        network_mode: "host"
